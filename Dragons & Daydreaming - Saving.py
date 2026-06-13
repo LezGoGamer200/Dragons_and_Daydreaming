@@ -18,7 +18,7 @@ attack=False
 inventory=["hands"]
 bosses=["Drakon","Avos","Davilith","Belos","Daygon","Knightmare"]
 cutscene_days=[1,3,6,8]
-clear = lambda: os.system('cls')
+clear = lambda: os.system("cls")
 clear()
 locations=["starting field","star tree town","easton town","weston town","northston town","southston town","farover hill","halted river cave","ice field","dark peak mountain","yes","no","nm"]
 starting_field_items=["sword","dagger"]
@@ -113,7 +113,7 @@ def save_game(save_file):
     typewrite("*************************", .94)
     typewrite("Game Saved.")
 def read_save(save_file):
-    global has_map, world_name, player_name_first, player_name_last, starting_field_items, star_tree_town_items, easton_town_items, weston_town_items, southston_town_items, northston_town_items, farover_hill_items, halted_river_cave_items, ice_field_items, dark_peak_items, location, npc_name_star_tree, has_met_star_npc, npc_name_easton, has_met_easton_npc, npc_name_weston, has_met_weston_npc, npc_name_northston, has_met_northston_npc, npc_name_southston, has_met_northston_npc, has_met_ethan, day, health, in_town, inventory, enemies_killed, health_potions
+    global has_map, world_name, player_name_first, player_name_last, starting_field_items, star_tree_town_items, easton_town_items, weston_town_items, southston_town_items, northston_town_items, farover_hill_items, halted_river_cave_items, ice_field_items, dark_peak_items, location, npc_name_star_tree, has_met_star_npc, npc_name_easton, has_met_easton_npc, npc_name_weston, has_met_weston_npc, npc_name_northston, has_met_northston_npc, npc_name_southston, has_met_southston_npc, has_met_ethan, day, health, in_town, inventory, enemies_killed, health_potions
     file = open(save_file, "r")
     read = file.readlines()
     player_name_first_check = read[0]
@@ -229,7 +229,7 @@ def read_save(save_file):
     typewrite("*************************", .94)
     typewrite("File loaded.")
     console_clear()
-    return has_map, world_name, player_name_first, player_name_last, starting_field_items, star_tree_town_items, easton_town_items, weston_town_items, southston_town_items, northston_town_items, farover_hill_items, halted_river_cave_items, ice_field_items, dark_peak_items, location, npc_name_star_tree, has_met_star_npc, npc_name_easton, has_met_easton_npc, npc_name_weston, has_met_weston_npc, npc_name_northston, has_met_northston_npc, npc_name_southston, has_met_northston_npc, has_met_ethan, day, health, in_town, inventory, enemies_killed, health_potions
+    return has_map, world_name, player_name_first, player_name_last, starting_field_items, star_tree_town_items, easton_town_items, weston_town_items, southston_town_items, northston_town_items, farover_hill_items, halted_river_cave_items, ice_field_items, dark_peak_items, location, npc_name_star_tree, has_met_star_npc, npc_name_easton, has_met_easton_npc, npc_name_weston, has_met_weston_npc, npc_name_northston, has_met_northston_npc, npc_name_southston, has_met_southston_npc, has_met_ethan, day, health, in_town, inventory, enemies_killed, health_potions
 def start():
     global world_name, player_name_first, player_name_last
     typewrite("Welcome to this land.          ",0.04)
